@@ -5,6 +5,7 @@ import 'package:ayurveda/Home/scoreboard/scoreboard.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'Responses/csv_test.dart';
 
 class DashBoard extends StatefulWidget {
   const DashBoard({Key? key}) : super(key: key);
@@ -21,11 +22,9 @@ class _DashBoardState extends State<DashBoard> {
   static final List<Widget> _widgetOptions = <Widget>[
     //home elements dashboard, progress, profile, score board
     const Home(),
-    const PageResponse(),
+    const CsvRead(),
     const Progress(),
-    const ScoreBoard(
-      question_: 'First',
-    ),
+    const ScoreBoard(),
   ];
 
   void _onItemTapped(int index) {

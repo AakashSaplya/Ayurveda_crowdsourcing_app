@@ -5,10 +5,10 @@ import 'package:ayurveda/Home/profile_screen.dart';
 import 'package:ayurveda/audios_/audio_play.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ayurveda/questions/questions_list.dart';
 import '../../animations/animchange.dart';
 import '../../animations/vpk_change.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:ayurveda/Home/Responses/csv_test.dart';
 
 var selectedVataType = '0';
 var selectedKaphaType = '0';
@@ -108,7 +108,8 @@ class _PageResponseState extends State<PageResponse> {
                     child: SingleChildScrollView(
                       child: Center(
                         child: Text(
-                          questions[a].question!,
+                          data_[a][1],
+                          //questions[a].question!,
                           style: TextStyle(
                               fontSize: fnt / 2.5,
                               color: Colors.grey[800],
@@ -128,8 +129,8 @@ class _PageResponseState extends State<PageResponse> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Text('Vata'),
-                        SizedBox(
+                        const Text('Vata'),
+                        const SizedBox(
                           width: 10.0,
                         ),
                         SizedBox(
@@ -343,7 +344,7 @@ Future ResPonse() async {
       .collection("Users")
       .doc(user.uid)
       .collection('Questions')
-      .doc(questions[a - 1].question)
+      .doc(data_[a][1])
       .set({
     'Vata': selectedVataType,
     'Kapha': selectedKaphaType,

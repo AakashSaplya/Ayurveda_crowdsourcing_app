@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                         height: height * 0.20,
                         child: Image.asset('assets/log.png')),
-                    Text(
+                    const Text(
                       'Learn Ayurveda and expand Ayurveda',
                       style: TextStyle(
                           fontSize: 18,
@@ -130,8 +130,8 @@ class _LoginPageState extends State<LoginPage> {
                                   TextFormField(
                                     controller: emailController,
                                     decoration: const InputDecoration(
-                                      contentPadding: const EdgeInsets.fromLTRB(
-                                          15, 2, 15, 2),
+                                      contentPadding:
+                                          EdgeInsets.fromLTRB(15, 2, 15, 2),
                                       suffixIcon: Icon(
                                         Icons.email_rounded,
                                         size: 25,
@@ -142,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
                                             Radius.circular(25)),
                                       ),
                                     ),
-                                    style: TextStyle(fontSize: 13),
+                                    style: const TextStyle(fontSize: 13),
                                     // The validator receives the text that the user has entered.
                                     validator: (value) {
                                       if (value == null || value.isEmpty) {
