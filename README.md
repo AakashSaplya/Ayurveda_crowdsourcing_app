@@ -8,11 +8,11 @@ A Flutter-based Android application designed to collect data on Ayurveda terms (
 ## Snapshots of App 
 <img src="Image1.jpg" alt="Image1" width="250" height="450" /> <img src="Image2.jpg" alt="Image2" width="250" height="450" />
 <img src="Image3.jpg" alt="Image3" width="250" height="450" />
-<img src="Image4.jpg" alt="Image4" width="300" height="450" />
-<img src="Image5.jpg" alt="Image5" width="300" height="450" />
-<img src="Image6.jpg" alt="Image6" width="300" height="450" />
-<img src="Image7.jpg" alt="Image7" width="300" height="450" />
-<img src="Image8.jpg" alt="Image8" width="300" height="450" /> <img src="Image9.jpg" alt="Image9" width="300" height="450" />
+<img src="Image4.jpg" alt="Image4" width="250" height="450" />
+<img src="Image5.jpg" alt="Image5" width="250" height="450" />
+<img src="Image6.jpg" alt="Image6" width="250" height="450" />
+<img src="Image7.jpg" alt="Image7" width="250" height="450" />
+<img src="Image8.jpg" alt="Image8" width="250" height="450" /> <img src="Image9.jpg" alt="Image9" width="250" height="450" />
 
 
 ## Download and run 
